@@ -6,11 +6,16 @@
 	"description": "Mostly AI web app tests",
 	"scripts": {
 		"debug": "cypress open",
-		"test": "cypress run"
+		"test": "cypress run",
+		"format": "prettier --write --ignore-path .gitignore .",
+		"lint": "eslint --ignore-path .gitignore ."
 	},
 	"devDependencies": {
 		"cypress": "^12.17.4",
 		"cypress-each": "^1.13.3",
-		"cypress-real-events": "^1.10.1"
+		"cypress-real-events": "^1.10.1",
+		"eslint": "^8.48.0",
+		"eslint-plugin-cypress": "^2.14.0",
+		"prettier": "^3.0.2"
 	}
 }
