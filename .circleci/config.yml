@@ -9,4 +9,7 @@ workflows:
       - cypress/run:
           package-manager: yarn
           cypress-command: yarn test
-  
+          name: Run Cypress tests
+          post-steps:
+            - store_artifacts:
+                path: cypress/reports
