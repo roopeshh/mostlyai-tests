@@ -1,0 +1,16 @@
+{
+	"name": "mostlyai-tests",
+	"author": "Roopesh Hiriyanna",
+	"version": "1.0.0",
+	"license": "ISC",
+	"description": "Mostly AI web app tests",
+	"scripts": {
+		"debug": "cypress open",
+		"test": "cypress run"
+	},
+	"devDependencies": {
+		"cypress": "^12.17.4",
+		"cypress-each": "^1.13.3",
+		"cypress-real-events": "^1.10.1"
+	}
+}
