@@ -15,5 +15,6 @@ describe('Contact page test', () => {
 		ContactPage.validateText('Ask us anything!');
 		ContactPage.fillForm();
 		ContactPage.hoverOnSendMessage();
+		ContactPage.validateSendMessageButtonColorChanges();
 	});
 });

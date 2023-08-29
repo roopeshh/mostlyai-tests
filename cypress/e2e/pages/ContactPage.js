@@ -33,6 +33,9 @@ class ContactPage extends BasePage {
 		cy.get(this.SEND_MESSAGE)
 			.should('be.visible')
 			.realHover({ position: 'center', scrollBehavior: false });
+	}
+
+	validateSendMessageButtonColorChanges() {
 		cy.get(this.SEND_MESSAGE).should(
 			'have.css',
 			'background-color',
